@@ -17,13 +17,11 @@ export default class Main extends React.Component {
 
   // Open and close sidebar
   openNav() {
-    console.log("open")
     document.getElementById("mySidebar").style.width = "60%"
     document.getElementById("mySidebar").style.display = "block"
   }
 
   closeNav() {
-    console.log("close")
     document.getElementById("mySidebar").style.display = "none"
   }
 

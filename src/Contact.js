@@ -8,8 +8,8 @@ const Contact = () => (
       <div className="w3-section">
         <p><i className="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> New York, New York, US</p>
         <p><i className="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i>Email: <a href="mailto:jinlin314@gmail.com?Subject=Let's%20get%20in%20touch!" target="_top">jinlin314@gmail.com</a></p>
-        <p><i className="fa fa-fw w3-xxlarge w3-margin-right"><img src="/img/linkedin-icon.png" className="contact-icon"/></i> LinkedIn: <a href="https://www.linkedin.com/in/jinlin314" target="_blank">linkedin.com/in/jinlin314</a></p>
-        <p><i className="fa fa-fw w3-xxlarge w3-margin-right"><img src="/img/github-icon.png" className="contact-icon"/></i> GitHub: <a href="https://github.com/jinlin314" target="_blank">github.com/jinlin314</a></p>
+        <p><i className="fa fa-fw w3-xxlarge w3-margin-right"><img src="/img/linkedin-icon.png" className="contact-icon" alt="linkedin-icon" /></i> LinkedIn: <a href="https://www.linkedin.com/in/jinlin314" target="_blank" rel="noopener noreferrer">linkedin.com/in/jinlin314</a></p>
+        <p><i className="fa fa-fw w3-xxlarge w3-margin-right"><img src="/img/github-icon.png" className="contact-icon" alt="github-icon" /></i> GitHub: <a href="https://github.com/jinlin314" target="_blank" rel="noopener noreferrer">github.com/jinlin314</a></p>
       </div>
   </div>
 )

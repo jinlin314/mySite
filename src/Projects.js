@@ -1,13 +1,13 @@
 import React from 'react'
 
 const Projects = () => (
-  <div classNameName="w3-padding-32 w3-content" id="portfolio">
-    <h2 classNameName="w3-text-grey">My Portfolio</h2>
-    <hr classNameName="w3-opacity" />
+  <div className="w3-padding-32 w3-content" id="portfolio">
+    <h2 className="w3-text-grey">My Portfolio</h2>
+    <hr className="w3-opacity" />
 
     <div className="card-columns">
       <div className="card">
-        <img className="card-img-top" src="..." alt="Card image cap" />
+        <img className="card-img-top" src="..." alt="Card cap" />
           <div className="card-body">
             <h4 className="card-title">Card title that wraps to a new line</h4>
             <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -24,7 +24,7 @@ const Projects = () => (
         </blockquote>
       </div>
       <div className="card">
-        <img className="card-img-top" src="..." alt="Card image cap" />
+        <img className="card-img-top" src="..." alt="Card cap" />
           <div className="card-body">
             <h4 className="card-title">Card title</h4>
             <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -49,7 +49,7 @@ const Projects = () => (
         </div>
       </div>
       <div className="card">
-        <img className="card-img" src="..." alt="Card image" />
+        <img className="card-img" src="..." alt="Card" />
       </div>
       <div className="card p-3 text-right">
         <blockquote className="blockquote mb-0">
