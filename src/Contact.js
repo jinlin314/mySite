@@ -7,21 +7,10 @@ const Contact = () => (
 
       <div className="w3-section">
         <p><i className="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> New York, New York, US</p>
-        <p><i className="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: jinlin314@gmail.com</p>
+        <p><i className="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i>Email: <a href="mailto:jinlin314@gmail.com?Subject=Let's%20get%20in%20touch!" target="_top">jinlin314@gmail.com</a></p>
+        <p><i className="fa fa-fw w3-xxlarge w3-margin-right"><img src="/img/linkedin-icon.png" className="contact-icon"/></i> LinkedIn: <a href="https://www.linkedin.com/in/jinlin314" target="_blank">linkedin.com/in/jinlin314</a></p>
+        <p><i className="fa fa-fw w3-xxlarge w3-margin-right"><img src="/img/github-icon.png" className="contact-icon"/></i> GitHub: <a href="https://github.com/jinlin314" target="_blank">github.com/jinlin314</a></p>
       </div>
-
-      <p>Lets get in touch. Send me a message:</p>
-      <form action="/action_page.php" target="_blank">
-        <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name" /></p>
-        <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email" /></p>
-        <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject" /></p>
-        <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message" /></p>
-        <p>
-          <button className="w3-button w3-light-grey w3-padding-large" type="submit">
-            <i className="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p>
-      </form>
   </div>
 )
 
