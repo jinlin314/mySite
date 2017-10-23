@@ -10,7 +10,7 @@ export default class Experience extends React.Component {
 
         <div className="w3-light-grey">
           <div className="w3-container w3-padding-small w3-dark-grey" style={{width: 100+"%"}}>
-            <h3>Front End Developer @ <a href="http://shopviafly.com" target="_blank">ViaFly</a></h3>
+            <h3>Front End Developer @ <a href="http://shopviafly.com" target="_blank" rel="noopener noreferrer">ViaFly</a></h3>
           </div>
         </div>
         <p className="w3-wide w3-padding-16">August 2017 - Present</p>
@@ -23,7 +23,7 @@ export default class Experience extends React.Component {
 
         <div className="w3-light-grey">
           <div className="w3-container w3-padding-small w3-dark-grey" style={{width: 100+"%"}}>
-            <h3>Lab Instructor @ <a href="https://www.rfcuny.org" target="_blank">CUNY Research Foundation</a></h3>
+            <h3>Lab Instructor @ <a href="https://www.rfcuny.org" target="_blank" rel="noopener noreferrer">CUNY Research Foundation</a></h3>
           </div>
         </div>
         <p className="w3-wide w3-padding-16">August 2017 - Present</p>
@@ -34,7 +34,7 @@ export default class Experience extends React.Component {
 
         <div className="w3-light-grey">
           <div className="w3-container w3-padding-small w3-dark-grey" style={{width: 100+"%"}}>
-            <h3>Full Stack Developer @ <a href="playwitchesbrew.com" target="_blank">Witches' Brew</a></h3>
+            <h3>Full Stack Developer @ <a href="playwitchesbrew.com" target="_blank" rel="noopener noreferrer">Witches' Brew</a></h3>
           </div>
         </div>
         <p className="w3-wide w3-padding-16">June 2017 - July 2017</p>

@@ -1,5 +1,7 @@
 import React from 'react'
-
+import Experience from './Experience'
+import Projects from './Projects'
+import Contact from './Contact'
 
 export default class Home extends React.Component {
 
@@ -88,9 +90,15 @@ export default class Home extends React.Component {
         <p className="w3-wide">Technical Certificate: Full Stack Web Development</p>
         <p className="w3-wide">2017, New York, New York</p>
 
-        <button className="w3-button w3-light-grey w3-padding-large w3-section">
-          <i className="fa fa-download"></i> Download Resume
-        </button>
+        <Experience />
+        <Projects />
+        <Contact />
+
+        <form method="get" action="Jin Lin.pdf" target="top" className="w3-center">
+          <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
+            <i className="fa fa-download"></i> Download Resume
+          </button>
+        </form>
       </div>
     )
   }
