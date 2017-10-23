@@ -1,0 +1,56 @@
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/sidebar-pic.png');
+    min-height: 100%;
+}
+
+/*left side bar*/
+#sidebar {
+    width: 40%;
+}
+
+#mySidebar {
+    display: none;
+    padding-top: 150px;
+    right: 0;
+    z-index: 2;
+}
+
+#mySidebar a {
+    padding:0 12px;
+}
+
+/*page-content*/
+
+#page-content {
+    margin-left: 40%;
+}
+
+#menu-icon {
+    width: auto;
+    right: 0;
+}
+
+header {
+    padding: 128px 16px;
+}
+
+#header-img-1 {
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+#contact {
+    margin-bottom: 64px;
+}
+
+#googleMap {
+    width: 100%;
+    height: 300px;
+    margin: 36px 0;
+}
