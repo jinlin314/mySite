@@ -9,7 +9,7 @@ const Sidebar = (props) => (
     <div className="w3-bar-block w3-center">
       <Link to="/" className="w3-bar-item w3-button w3-text-grey w3-hover-black" onClick={props.closeNav}>Home</Link>
       <Link to="/projects" className="w3-bar-item w3-button w3-text-grey w3-hover-black" onClick={props.closeNav}>Portfolio</Link>
-      <Link to="/about" className="w3-bar-item w3-button w3-text-grey w3-hover-black" onClick={props.closeNav}>About</Link>
+      <Link to="/contact" className="w3-bar-item w3-button w3-text-grey w3-hover-black" onClick={props.closeNav}>Contact Me</Link>
     </div>
   </nav>
 )
