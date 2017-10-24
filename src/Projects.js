@@ -6,14 +6,14 @@ const Projects = () => {
   return (
     <div className="w3-padding-32 w3-content" id="portfolio">
       <h2 className="w3-text-grey">My Portfolio</h2>
-      <p className="hint w3-hide-xlarge">Click project photos to view more info</p>
+      <p className="hint">Click project photos to view more info</p>
       <hr className="w3-opacity" />
 
       <div className="card-columns">
         <div className="card text-left" data-toggle="modal" data-target="#YelpMe">
           <img className="card-img-top" src="img/yelper-me-1.png" alt="yelper-1" />
-          <div className="card-body">
-            <h4 className="card-title" data-toggle="modal" data-target="#YelpMe">YelpMe</h4>
+          <div className="card-body"  data-toggle="modal" data-target="#YelpMe">
+            <h4 className="card-title">YelpMe</h4>
             <p className="card-text">A Google Chrome Extension extends Yelp search to include health inspection records with the results</p>
           </div>
         </div>

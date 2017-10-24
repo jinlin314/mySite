@@ -94,7 +94,7 @@ export default class Home extends React.Component {
         <Projects />
         <Contact />
 
-        <form method="get" action="https://drive.google.com/file/d/0BxQUI9FThWZ1SHhPN1UtOXJWZTQ/view?usp=sharing" target="top" className="w3-center">
+        <form method="get" action="https://drive.google.com/file/d/0BxQUI9FThWZ1a3dDank4ai1IeWM/view?usp=sharing" target="top" className="w3-center">
           <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
             <i className="fa fa-download"></i> Download Resume
           </button>
