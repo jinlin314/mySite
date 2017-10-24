@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div className="w3-padding-32 w3-content" id="portfolio">
       <h2 className="w3-text-grey">My Portfolio</h2>
-      <p className="hint w3-hide-large">Click project photos to view more info</p>
+      <p className="hint w3-hide-xlarge">Click project photos to view more info</p>
       <hr className="w3-opacity" />
 
       <div className="card-columns">
