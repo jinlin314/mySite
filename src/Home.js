@@ -79,22 +79,22 @@ export default class Home extends React.Component {
             The City College of New York University
           </div>
         </div><br />
-        <p className="w3-wide">Bachelor of Computer Engineering</p>
-        <p className="w3-wide">2004 - 2008, New York, New York</p>
+        <p>Bachelor of Computer Engineering</p>
+        <p>2004 - 2008, New York, New York</p>
 
         <div className="w3-light-grey">
           <div className="w3-container w3-padding-small w3-dark-grey" style={{width: 100+"%"}}>
             Full Stack Academy of Code
           </div>
         </div><br />
-        <p className="w3-wide">Technical Certificate: Full Stack Web Development</p>
-        <p className="w3-wide">2017, New York, New York</p>
+        <p>Technical Certificate: Full Stack Web Development</p>
+        <p>2017, New York, New York</p>
 
         <Experience />
         <Projects />
         <Contact />
 
-        <form method="get" action="Jin Lin.pdf" target="top" className="w3-center">
+        <form method="get" action="https://drive.google.com/file/d/0BxQUI9FThWZ1SHhPN1UtOXJWZTQ/view?usp=sharing" target="top" className="w3-center">
           <button className="w3-button w3-light-grey w3-padding-large w3-margin-top">
             <i className="fa fa-download"></i> Download Resume
           </button>

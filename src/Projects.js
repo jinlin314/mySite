@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectModal from './ProjectModal'
+// import ProjectModal from './ProjectModal'
 import { yelper, poll, socialMediaRoyalty, wiki, withesBrew, juke } from './projectsInfo'
 
 const Projects = () => {
@@ -12,7 +12,7 @@ const Projects = () => {
         <div className="card text-left" data-toggle="modal" data-target="#YelpMe">
           <img className="card-img-top" src="img/yelper-me-1.png" alt="yelper-1" />
           <div className="card-body">
-            <h4 className="card-title">YelpMe</h4>
+            <h4 className="card-title" data-toggle="modal" data-target="#YelpMe">YelpMe</h4>
             <p className="card-text">A Google Chrome Extension extends Yelp search to include health inspection records with the results</p>
           </div>
         </div>
@@ -40,41 +40,10 @@ const Projects = () => {
         </div>
 
 
-        <div className="card text-left" data-toggle="modal" data-target="#WitchesBrew">
-          <img className="card-img-top" src="img/witches-brew-1.png" alt="withes-brew-1" />
-          <div className="card-body">
-            <h4 className="card-title"><a href="https://playwitchesbrew.com/intro" target="_blank" rel="noopener noreferrer">Withes' Brew</a></h4>
-            <p className="card-text">A ​real-time ​multi-player ​collaborative ​party ​game</p>
-          </div>
-        </div>
-        <div className="modal fade" id="WitchesBrew" tabIndex="-1" role="dialog" aria-labelledby={withesBrew.title+"Label"} aria-hidden="true">
-          <div className="modal-dialog" role="document">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title" id={withesBrew.title+"Label"}>{withesBrew.title}</h5>
-                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div className="modal-body">
-                <p><a href={withesBrew.link} target="_blank" rel="noopener noreferrer">{ withesBrew.link }</a></p>
-                <p>{ withesBrew.description }</p>
-                { withesBrew.imgs.map((img, i) => {
-                  return <img src={img} alt={withesBrew.title + i} key={img} className="img-thumbnail"/>
-                })}
-              </div>
-              <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
         <div className="card text-center" data-toggle="modal" data-target="#SocialMediaRoyalty">
           <img className="card-img-top" src="img/social-royalty-1.png" alt="social-royalty-1" />
           <div className="card-body">
-            <h4 className="card-title">Social Media Royalty</h4>
+            <h4 className="card-title" data-toggle="modal" data-target="#SocialMediaRoyalty">Social Media Royalty</h4>
             <p className="card-text">An eCommerce Site: mini Amazon</p>
           </div>
         </div>
@@ -105,7 +74,7 @@ const Projects = () => {
         <div className="card text-center" data-toggle="modal" data-target="#PollApp">
           <img className="card-img-top" src="img/poll-1.png" alt="poll-1" />
           <div className="card-body">
-            <h4 className="card-title">Poll App</h4>
+            <h4 className="card-title" data-toggle="modal" data-target="#PollApp">Poll App</h4>
             <p className="card-text">A simple poll app, can be used as a full stack react-express-sequelize-passport boilerplate</p>
           </div>
         </div>
@@ -133,10 +102,41 @@ const Projects = () => {
         </div>
 
 
+        <div className="card text-left" data-toggle="modal" data-target="#WitchesBrew">
+          <img className="card-img-top" src="img/witches-brew-1.png" alt="withes-brew-1" />
+          <div className="card-body">
+            <h4 className="card-title" data-toggle="modal" data-target="#WitchesBrew">Withes' Brew</h4>
+            <p className="card-text">A ​real-time ​multi-player ​collaborative ​party ​game</p>
+          </div>
+        </div>
+        <div className="modal fade" id="WitchesBrew" tabIndex="-1" role="dialog" aria-labelledby={withesBrew.title+"Label"} aria-hidden="true">
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id={withesBrew.title+"Label"}>{withesBrew.title}</h5>
+                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div className="modal-body">
+                <p><a href={withesBrew.link} target="_blank" rel="noopener noreferrer">{ withesBrew.link }</a></p>
+                <p>{ withesBrew.description }</p>
+                { withesBrew.imgs.map((img, i) => {
+                  return <img src={img} alt={withesBrew.title + i} key={img} className="img-thumbnail"/>
+                })}
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
         <div className="card text-right" data-toggle="modal" data-target="#JukeBox">
           <img className="card-img-top" src="img/juke1.png" alt="poll-1" />
           <div className="card-body">
-            <h4 className="card-title">Juke Box</h4>
+            <h4 className="card-title" data-toggle="modal" data-target="#JukeBox">Juke Box</h4>
             <p className="card-text">A muisc Juke box: mini iTunes</p>
           </div>
         </div>
@@ -167,7 +167,7 @@ const Projects = () => {
         <div className="card p-3 text-right" data-toggle="modal" data-target="#WikiApp">
           <img className="card-img-top" src="img/wiki1.png" alt="poll-1" />
           <div className="card-body">
-            <h4 className="card-title">Wiki Stack</h4>
+            <h4 className="card-title" data-toggle="modal" data-target="#WikiApp">Wiki Stack</h4>
             <p className="card-text">A min blog app</p>
           </div>
         </div>
