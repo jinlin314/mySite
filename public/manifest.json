@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Jin Lin",
+  "name": "Jin Lin Portfolio Site",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "img/myLogo.png",
       "sizes": "192x192",
       "type": "image/png"
     }
