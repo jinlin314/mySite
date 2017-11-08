@@ -16,7 +16,9 @@ export default class Experience extends React.Component {
         <p className="w3-wide w3-padding-16">August 2017 - Present</p>
         <ul>
           <li>Transformed mockups from designer into React components</li>
-          <li>Integrated front end components with the back end APIs using Ajax</li>
+          <li>Integrated front end components with the backend APIs using AJax</li>
+          <li>Added React Router to the site to keep the UI in sync with the URL. Utilized React Router's
+            dynamic route matching, and location transition handling features to render the UI as Pinterest style modals</li>
           <li>Improved the flexibility and cleanness of the code by adding Redux. Thus, the front end
             React components can just manager the views according to the states managed by Redux</li>
         </ul><br />
@@ -54,7 +56,7 @@ export default class Experience extends React.Component {
           <li>Marketing specialist promoting the client through print, internet, and store events</li>
           <li>Developed and implemented inventory tracking system for corporate sales over $2M</li>
           <li>Recruited over 50 employees through direct and indirect staffing campaigns</li>
-        </ul><br />
+        </ul>
       </div>
     )
   }

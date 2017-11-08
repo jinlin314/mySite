@@ -3,6 +3,8 @@ import { Switch, Route } from 'react-router-dom'
 import Sidebar from './Sidebar'
 import Header from './Header'
 import Home from './Home'
+import Skills from './Skills'
+import Education from './Edcation'
 import Experience from './Experience'
 import Projects from './Projects'
 import Contact from './Contact'
@@ -42,8 +44,10 @@ export default class Main extends React.Component {
 
           <Switch>
             <Route exact path='/' component={Home}/>
+            <Route path='/skills' component={Skills}/>
             <Route path='/experience' component={Experience}/>
             <Route path='/projects' component={Projects}/>
+            <Route path='/education' component={Education}/>
             <Route path='/contact' component={Contact}/>
           </Switch>
         </div>
