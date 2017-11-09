@@ -17,7 +17,7 @@ export default class Experience extends React.Component {
         <ul>
           <li>Transformed mockups from designer into React components</li>
           <li>Integrated front end components with the backend APIs using AJax</li>
-          <li>Added React Router to the site to keep the UI in sync with the URL. Utilized React Router's
+          <li>incorporated React Router to the site to keep the UI in sync with the URL. Utilized React Router's
             dynamic route matching, and location transition handling features to render the UI as Pinterest style modals</li>
           <li>Improved the flexibility and cleanness of the code by adding Redux. Thus, the front end
             React components can just manager the views according to the states managed by Redux</li>
