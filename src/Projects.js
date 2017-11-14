@@ -8,7 +8,6 @@ const Projects = () => {
       <h2 className="w3-text-grey">My Portfolio</h2>
       <p className="hint">Click project photos to view more info</p>
       <hr className="w3-opacity" />
-
       <div className="card-columns">
         <div className="card text-left" data-toggle="modal" data-target="#YelpMe">
           <img className="card-img-top" src="img/yelper-me-1.png" alt="yelper-1" />
