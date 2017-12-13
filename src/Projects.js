@@ -1,6 +1,6 @@
 import React from 'react'
 // import ProjectModal from './ProjectModal'
-import { yelper, poll, socialMediaRoyalty, wiki, withesBrew, juke, reactor } from './projectsInfo'
+import { yelper, poll, socialMediaRoyalty, wiki, withesBrew, juke, reactor, fairyMessageBoard } from './projectsInfo'
 
 const Projects = () => {
   return (
@@ -9,6 +9,36 @@ const Projects = () => {
       <p className="hint">Click project photos to view more info</p>
       <hr className="w3-opacity" />
       <div className="card-columns">
+
+        <div className="card text-left" data-toggle="modal" data-target="#FairyMessageBoard">
+          <img className="card-img-top" src="img/fairMessageBoard2.png" alt="FairyMessageBoard-1" />
+          <div className="card-body"  data-toggle="modal" data-target="#FairyMessageBoard">
+            <h4 className="card-title"><a href="https://fairygodboss-message-board.herokuapp.com/posts" target="_blank">{fairyMessageBoard.title}</a></h4>
+            <p className="card-text">A mobile responsive Message Board built with React.js. Users can make a new post, reply to any post.</p>
+          </div>
+        </div>
+        <div className="modal fade" id="FairyMessageBoard" tabIndex="-1" role="dialog" aria-labelledby={fairyMessageBoard.title+"Label"} aria-hidden="true">
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id={fairyMessageBoard.title+"Label"}>{fairyMessageBoard.title}</h5>
+                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div className="modal-body">
+                <p><a href={fairyMessageBoard.link} target="_blank" rel="noopener noreferrer">{ fairyMessageBoard.link }</a></p>
+                <p>{ fairyMessageBoard.description }</p>
+                { fairyMessageBoard.imgs.map((img, i) => {
+                  return <img src={img} alt={fairyMessageBoard.title + i} key={img} className="img-thumbnail"/>
+                })}
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div className="card text-left" data-toggle="modal" data-target="#YelpMe">
           <img className="card-img-top" src="img/yelper-me-1.png" alt="yelper-1" />
@@ -31,6 +61,36 @@ const Projects = () => {
                 <p>{ yelper.description }</p>
                 { yelper.imgs.map((img, i) => {
                   return <img src={img} alt={yelper.title + i} key={img} className="img-thumbnail"/>
+                })}
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="card text-left" data-toggle="modal" data-target="#Reactor">
+          <img className="card-img-top" src="img/Reactor1.png" alt="Reactor-1" />
+          <div className="card-body"  data-toggle="modal" data-target="#Reactor">
+            <h4 className="card-title"><a href="https://reactor-reactor.herokuapp.com/home" target="_blank">{reactor.title}</a></h4>
+            <p className="card-text">A mobile responsive React App template.</p>
+          </div>
+        </div>
+        <div className="modal fade" id="Reactor" tabIndex="-1" role="dialog" aria-labelledby={reactor.title+"Label"} aria-hidden="true">
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id={reactor.title+"Label"}>{reactor.title}</h5>
+                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div className="modal-body">
+                <p><a href={reactor.link} target="_blank" rel="noopener noreferrer">{ reactor.link }</a></p>
+                <p>{ reactor.description }</p>
+                { reactor.imgs.map((img, i) => {
+                  return <img src={img} alt={reactor.title + i} key={img} className="img-thumbnail"/>
                 })}
               </div>
               <div className="modal-footer">
@@ -135,7 +195,7 @@ const Projects = () => {
         <div className="card text-left" data-toggle="modal" data-target="#WitchesBrew">
           <img className="card-img-top" src="img/witches-brew-1.png" alt="withes-brew-1" />
           <div className="card-body">
-            <h4 className="card-title" data-toggle="modal" data-target="#WitchesBrew">Withes' Brew</h4>
+            <h4 className="card-title" data-toggle="modal" data-target="#WitchesBrew"><a href="https://playwitchesbrew.com/" target="_blank">Withes' Brew</a></h4>
             <p className="card-text">A ​real-time ​multi-player ​collaborative ​party ​game</p>
           </div>
         </div>
@@ -184,36 +244,6 @@ const Projects = () => {
                 <p>{ juke.description }</p>
                 { juke.imgs.map((img, i) => {
                   return <img src={img} alt={juke.title + i} key={img} className="img-thumbnail"/>
-                })}
-              </div>
-              <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="card text-left" data-toggle="modal" data-target="#Reactor">
-          <img className="card-img-top" src="img/Reactor1.png" alt="Reactor-1" />
-          <div className="card-body"  data-toggle="modal" data-target="#Reactor">
-            <h4 className="card-title">{reactor.title}</h4>
-            <p className="card-text">{reactor.description}</p>
-          </div>
-        </div>
-        <div className="modal fade" id="Reactor" tabIndex="-1" role="dialog" aria-labelledby={reactor.title+"Label"} aria-hidden="true">
-          <div className="modal-dialog" role="document">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title" id={reactor.title+"Label"}>{reactor.title}</h5>
-                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div className="modal-body">
-                <p><a href={reactor.link} target="_blank" rel="noopener noreferrer">{ reactor.link }</a></p>
-                <p>{ reactor.description }</p>
-                { reactor.imgs.map((img, i) => {
-                  return <img src={img} alt={reactor.title + i} key={img} className="img-thumbnail"/>
                 })}
               </div>
               <div className="modal-footer">

@@ -53,3 +53,11 @@ export const reactor = {
   link: "https://github.com/jinlin314/reactor",
   imgs: ["img/Reactor1.png", "img/Reactor2.png", "img/Reactor3.png", "img/Reactor4.png"]
 }
+
+export const fairyMessageBoard = {
+  id: "FairyMessageBoard",
+  title: "Fairy Message Board",
+  description: "This is a simple message board, where your can view all the posts, create a new post, and comment on any post. It is built with React, React Router and React Redux. It used Boostrap and React-Boostrap to handle mobile responsiveness. The mobile breakpoint is at width of '525px' & '765px'. It is purely frontend, data will be wiped out on reload.",
+  link: "https://github.com/jinlin314/reactor",
+  imgs: ["img/fairMessageBoard1.png", "img/fairMessageBoard2.png", "img/fairMessageBoard3.png", "img/fairMessageBoard4.png", "img/fairMessageBoard5.png", "img/fairMessageBoard6.png", "img/fairMessageBoard7.png"]
+}
