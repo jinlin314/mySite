@@ -45,3 +45,11 @@ export const poll = {
   link: "https://github.com/jinlin314/poll_app",
   imgs: ["img/poll-1.png"]
 }
+
+export const reactor = {
+  id: "ReactorApp",
+  title: "Reactor",
+  description: "This is the frontend code for a simple React app. It is fully mobile responsive, integrates with backend sign up, log in, and subscribe APIs using AJAX.",
+  link: "https://github.com/jinlin314/reactor",
+  imgs: ["img/Reactor1.png", "img/Reactor2.png", "img/Reactor3.png", "img/Reactor4.png"]
+}

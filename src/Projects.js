@@ -1,6 +1,6 @@
 import React from 'react'
 // import ProjectModal from './ProjectModal'
-import { yelper, poll, socialMediaRoyalty, wiki, withesBrew, juke } from './projectsInfo'
+import { yelper, poll, socialMediaRoyalty, wiki, withesBrew, juke, reactor } from './projectsInfo'
 
 const Projects = () => {
   return (
@@ -9,6 +9,7 @@ const Projects = () => {
       <p className="hint">Click project photos to view more info</p>
       <hr className="w3-opacity" />
       <div className="card-columns">
+
         <div className="card text-left" data-toggle="modal" data-target="#YelpMe">
           <img className="card-img-top" src="img/yelper-me-1.png" alt="yelper-1" />
           <div className="card-body"  data-toggle="modal" data-target="#YelpMe">
@@ -39,6 +40,35 @@ const Projects = () => {
           </div>
         </div>
 
+        <div className="card p-3 text-right" data-toggle="modal" data-target="#WikiApp">
+          <img className="card-img-top" src="img/wiki1.png" alt="poll-1" />
+          <div className="card-body">
+            <h4 className="card-title" data-toggle="modal" data-target="#WikiApp">Wiki Stack</h4>
+            <p className="card-text">A min blog app</p>
+          </div>
+        </div>
+        <div className="modal fade" id="WikiApp" tabIndex="-1" role="dialog" aria-labelledby={wiki.title+"Label"} aria-hidden="true">
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id={wiki.title+"Label"}>{wiki.title}</h5>
+                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div className="modal-body">
+                <p><a href={wiki.link} target="_blank" rel="noopener noreferrer">{ wiki.link }</a></p>
+                <p>{ wiki.description }</p>
+                { wiki.imgs.map((img, i) => {
+                  return <img src={img} alt={wiki.title + i} key={img} className="img-thumbnail"/>
+                })}
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div className="card text-center" data-toggle="modal" data-target="#SocialMediaRoyalty">
           <img className="card-img-top" src="img/social-royalty-1.png" alt="social-royalty-1" />
@@ -163,28 +193,27 @@ const Projects = () => {
           </div>
         </div>
 
-
-        <div className="card p-3 text-right" data-toggle="modal" data-target="#WikiApp">
-          <img className="card-img-top" src="img/wiki1.png" alt="poll-1" />
-          <div className="card-body">
-            <h4 className="card-title" data-toggle="modal" data-target="#WikiApp">Wiki Stack</h4>
-            <p className="card-text">A min blog app</p>
+        <div className="card text-left" data-toggle="modal" data-target="#Reactor">
+          <img className="card-img-top" src="img/Reactor1.png" alt="Reactor-1" />
+          <div className="card-body"  data-toggle="modal" data-target="#Reactor">
+            <h4 className="card-title">{reactor.title}</h4>
+            <p className="card-text">{reactor.description}</p>
           </div>
         </div>
-        <div className="modal fade" id="WikiApp" tabIndex="-1" role="dialog" aria-labelledby={wiki.title+"Label"} aria-hidden="true">
+        <div className="modal fade" id="Reactor" tabIndex="-1" role="dialog" aria-labelledby={reactor.title+"Label"} aria-hidden="true">
           <div className="modal-dialog" role="document">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title" id={wiki.title+"Label"}>{wiki.title}</h5>
+                <h5 className="modal-title" id={reactor.title+"Label"}>{reactor.title}</h5>
                 <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div className="modal-body">
-                <p><a href={wiki.link} target="_blank" rel="noopener noreferrer">{ wiki.link }</a></p>
-                <p>{ wiki.description }</p>
-                { wiki.imgs.map((img, i) => {
-                  return <img src={img} alt={wiki.title + i} key={img} className="img-thumbnail"/>
+                <p><a href={reactor.link} target="_blank" rel="noopener noreferrer">{ reactor.link }</a></p>
+                <p>{ reactor.description }</p>
+                { reactor.imgs.map((img, i) => {
+                  return <img src={img} alt={reactor.title + i} key={img} className="img-thumbnail"/>
                 })}
               </div>
               <div className="modal-footer">
@@ -193,6 +222,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
+
       </div>
     </div>
   )
