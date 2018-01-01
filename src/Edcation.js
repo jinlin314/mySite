@@ -25,9 +25,12 @@ const Education = () => (
         Udacity
       </div>
     </div><br />
+    <p>Responsive Web Design</p>
     <p>Object Oriented Javascript</p>
+    <p>Javascript Testing</p>
     <p>Authentication & Authorization: OAuth</p>
-    <p>2017, Online</p>
+    <p>Offline Web Application: Service Worker & IndexedDB and Caching</p>
+    <p>2017 - 2018, Online</p>
 
     <div className="w3-light-grey">
       <div className="w3-container w3-padding-small w3-dark-grey" style={{width: 100+"%"}}>

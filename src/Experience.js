@@ -10,10 +10,18 @@ export default class Experience extends React.Component {
 
         <div className="w3-light-grey">
           <div className="w3-container w3-padding-small w3-dark-grey" style={{width: 100+"%"}}>
+            <h3>Software Engineer @ <a href="http://fairygodboss.com" target="_blank" rel="noopener noreferrer">FairyGodBoss</a></h3>
+          </div>
+        </div>
+        <p className="w3-wide w3-padding-16">January 2018 - Present</p>
+        <br />
+
+        <div className="w3-light-grey">
+          <div className="w3-container w3-padding-small w3-dark-grey" style={{width: 100+"%"}}>
             <h3>Front End Developer @ <a href="http://shopviafly.com" target="_blank" rel="noopener noreferrer">ViaFly</a></h3>
           </div>
         </div>
-        <p className="w3-wide w3-padding-16">August 2017 - Present</p>
+        <p className="w3-wide w3-padding-16">August 2017 - December 2017</p>
         <ul>
           <li>Transformed mockups from designer into React components</li>
           <li>Integrated front end components with the backend APIs using AJax</li>
@@ -48,15 +56,15 @@ export default class Experience extends React.Component {
 
         <div className="w3-light-grey">
           <div className="w3-container w3-padding-small w3-dark-grey" style={{width: 100+"%"}}>
-            <h3>Assistant Manager @ Shanghai Duplicate Corp.</h3>
+            <h3>Full Stack Developer @ YelpMe</h3>
           </div>
         </div>
-        <p className="w3-wide w3-padding-16">September 2008 - June 2016</p>
+        <p className="w3-wide w3-padding-16">June 2017</p>
         <ul>
-          <li>Marketing specialist promoting the client through print, internet, and store events</li>
-          <li>Developed and implemented inventory tracking system for corporate sales over $2M</li>
-          <li>Recruited over 50 employees through direct and indirect staffing campaigns</li>
-        </ul>
+          <li>Developed a Google Chrome Extension that extended Yelp search API to include the health inspection grades for each result, and allowed users to manage their local favorite eaters more conveniently and efficiently</li>
+          <li>Engineered the application with Javascript, ES6, React, Redux, JavaScript, and Node.js, npm, Babel, Webpack</li>
+        </ul><br />
+
       </div>
     )
   }
